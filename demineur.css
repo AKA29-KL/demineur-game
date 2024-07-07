@@ -1,1 +1,36 @@
+/* Style for the grid container */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* 10 equal columns */
+    gap: 1px; /* Adjust gap between cells as needed */
+    background-color: #bbb; /* Background color of the grid */
+    padding: 10px; /* Padding around the grid */
+    max-width: 500px; /* Optional: Limit width of the grid container */
+    margin: 0 auto; /* Optional: Center the grid horizontally */
+}
 
+/* Style for each cell */
+.cell {
+    background-color: #ddd; /* Background color of each cell */
+    border: 1px solid #888; /* Border around each cell */
+    text-align: center; /* Center text inside each cell */
+    cursor: pointer; /* Pointer cursor when hovering over cells */
+    padding: 10px; /* Padding inside each cell */
+    font-size: 20px; /* Font size of the number or bomb emoji */
+}
+
+/* Additional styles for clicked cells */
+.cell.clicked {
+    background-color: #ccc; /* Background color of clicked cells */
+    pointer-events: none; /* Disable further clicks on revealed cells */
+}
+
+/* Additional styles for bomb cells */
+.cell.bomb {
+    background-color: #f00; /* Background color for bombs */
+    color: #fff; /* Text color for bombs */
+    font-weight: bold; /* Bold text for bombs */
+}
+h1 {
+    color:pink;
+}
